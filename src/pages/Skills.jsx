@@ -3,7 +3,7 @@ import html from "../assets/Skills-Img/html.png"
 import css from "../assets/Skills-Img/css.png"
 import js from "../assets/Skills-Img/javascript.png"
 import bootstrap from "../assets/Skills-Img/boot.png"
-import tailwind from "../assets/Skills-Img/tailwind.png"
+import tailwind from "../assets/Skills-Img/tailwind.png";
 import photoshop from "../assets/Skills-Img/photoshop.png"
 import vue from "../assets/Skills-Img/vue.png"
 import figma from "../assets/Skills-Img/figma.png"
