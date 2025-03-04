@@ -15,7 +15,7 @@ const Contact = () => {
 
     return (
         <>
-            <motion.div className=" bg-white"
+            <motion.div 
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
@@ -27,7 +27,7 @@ const Contact = () => {
                         <div>
                             <label
                                 for="first-name"
-                                className="block text-sm/6 font-semibold text-gray-900"
+                                className="block text-sm/6 font-semibold"
                             >
                                 First name
                             </label>
@@ -37,15 +37,16 @@ const Contact = () => {
                                     name="first-name"
                                     id="first-name"
                                     autocomplete="given-name"
+                                    placeholder="First name"
                                     required
-                                    className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
+                                    className="block w-full rounded-md px-3.5 py-2 text-base outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
                                 />
                             </div>
                         </div>
                         <div>
                             <label
                                 for="last-name"
-                                className="block text-sm/6 font-semibold text-gray-900"
+                                className="block text-sm/6 font-semibold "
                             >
                                 Last name
                             </label>
@@ -56,14 +57,15 @@ const Contact = () => {
                                     id="last-name"
                                     required
                                     autocomplete="family-name"
-                                    className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
+                                    placeholder="Second name"
+                                    className="block w-full rounded-md px-3.5 py-2 text-base outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
                                 />
                             </div>
                         </div>
                         <div className="sm:col-span-2">
                             <label
                                 for="email"
-                                className="block text-sm/6 font-semibold text-gray-900"
+                                className="block text-sm/6 font-semibold "
                             >
                                 Email
                             </label>
@@ -74,7 +76,8 @@ const Contact = () => {
                                     id="email"
                                     required
                                     autocomplete="email"
-                                    className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
+                                    placeholder="Enter email address"
+                                    className="block w-full rounded-md px-3.5 py-2 text-base outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
                                 />
                                 <ValidationError
                                     prefix="Email"
@@ -86,7 +89,7 @@ const Contact = () => {
                         <div className="sm:col-span-2">
                             <label
                                 for="message"
-                                className="block text-sm/6 font-semibold text-gray-900"
+                                className="block text-sm/6 font-semibold "
                             >
                                 Message
                             </label>
@@ -95,7 +98,7 @@ const Contact = () => {
                                     name="message"
                                     id="message"
                                     rows="4"
-                                    className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
+                                    className="block w-full rounded-md  px-3.5 py-2 text-base  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-green-600"
                                 ></textarea>
                                 <ValidationError
                                     prefix="Message"

@@ -13,7 +13,7 @@ const Layout = () => {
         setsidebarOpen(!sidebarOpen)
     }
     return (
-        <BrowserRouter basename="/React-Portfolio/">
+        <BrowserRouter>
             <div>
                 <div className="flex h-screen gap-4">
                     <Side_Left sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />

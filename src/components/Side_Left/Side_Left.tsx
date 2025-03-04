@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Side_Left.css";
 import Contact from "../Contact/Contact";
 
+
 import mady from "../../../public/assets/mady.jpg";
 
 import {
@@ -32,7 +33,7 @@ const Side_Left = ({ toggleSidebar, sidebarOpen }) => {
                 }`}
         >
             <video autoPlay loop muted playsInline className="video-bg" onError={(e) => console.error("Video failed to load", e)}>
-                <source src="/React-Portfolio/vedio_bg.MP4" type="video/mp4" />
+                <source src="vedio_bg.MP4" type="video/mp4" />
 
                 Your browser does not support the video tag.
             </video>
