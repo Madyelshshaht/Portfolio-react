@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import Heading from "../components/heading/Heading";
-import web from "../../public/assets/loti/web.json";
+import web from "../assets/loti/web.json";
 import Lottie from "lottie-react";
 import Animation_Word from "../components/Home_Word/Animation_Word";
 import { motion } from 'framer-motion';

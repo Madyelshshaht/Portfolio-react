@@ -3,7 +3,10 @@ import "./Side_Left.css";
 import Contact from "../Contact/Contact";
 
 
-import mady from "../../../public/assets/mady.jpg";
+
+import mady from "../../assets/mady.jpg";
+
+
 
 import {
     CalendarDays,
