@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Side_Left from "../components/Side_Left/Side_Left";
 import Side_Right from "../components/Side_Right/Side_Right";
 import { BrowserRouter } from "react-router-dom";
-import { meta } from "@eslint/js";
+
 
 const Layout = () => {
 

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Side_Left.css";
 import Contact from "../Contact/Contact";
 
+import mady from "../../../public/assets/mady.jpg";
+
 import {
     CalendarDays,
     CircleX,
@@ -18,8 +20,7 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const Side_Left = ({ toggleSidebar, sidebarOpen }) => {
     const handleOpenImg = () => {
-        const imgUrl = "/assets/mady.jpg";
-        window.open(imgUrl, "_blank");
+        window.open(mady, "_blank");
     };
 
     return (
@@ -30,8 +31,10 @@ const Side_Left = ({ toggleSidebar, sidebarOpen }) => {
                     : "-translate-x-full ease-in"
                 }`}
         >
-            <video autoPlay loop muted playsInline className="video-bg">
-                <source src="/assets/video-bg/v-bg.MP4" type="video/mp4" />
+            <video autoPlay loop muted playsInline className="video-bg" onError={(e) => console.error("Video failed to load", e)}>
+                <source src="/React-Portfolio/vedio_bg.MP4" type="video/mp4" />
+
+                Your browser does not support the video tag.
             </video>
 
             {sidebarOpen && (
@@ -47,7 +50,7 @@ const Side_Left = ({ toggleSidebar, sidebarOpen }) => {
                     <div className="Header pt-2 text-white">
                         <div className="Myphoto">
                             <img
-                                src="/assets/mady.jpg"
+                                src={mady}
                                 alt="Mady"
                                 className="rounded-xl block mx-auto cursor-pointer w-48 h-45 md:w-48 md:h-45 object-fill"
                                 onClick={handleOpenImg}

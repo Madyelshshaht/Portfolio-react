@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import cv from "../../../public/mohamed c cv .pdf"
 
 const Button = () => {
 
     const handleDownloadCV = () => {
-        const cvUrl = "../../../public/mohamed c cv .pdf";
-        window.open(cvUrl, "_blank");
+        window.open(cv, "_blank");
     };
 
     return (
