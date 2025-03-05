@@ -6,8 +6,6 @@ import Contact from "../Contact/Contact";
 
 import mady from "../../assets/mady.jpg";
 
-
-
 import {
     CalendarDays,
     CircleX,
