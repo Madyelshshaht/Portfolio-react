@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import cv from "../../../public/mohamed c cv .pdf"
+import cv from "/mohamed c cv .pdf"
 
 const Button = () => {
 

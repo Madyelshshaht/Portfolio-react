@@ -28,13 +28,13 @@ const Side_Left = ({ toggleSidebar, sidebarOpen }) => {
     return (
         <div
             className={`Side_Left text-center fixed inset-y-0 top-0 left-0 z-30 md:w-95 md:text-base sm:w-75 w-70 text-[12px] lg:rounded-2xl overflow-y-hidden
-                            transition duration-400 transform lg:translate-x-0 lg:static lg:inset-0 ${sidebarOpen
-                    ? "translate-x-0 ease-out"
-                    : "-translate-x-full ease-in"
+                        transition duration-400 transform lg:translate-x-0 lg:static lg:inset-0 ${sidebarOpen
+                        ? "translate-x-0 ease-out"
+                        : "-translate-x-full ease-in"
                 }`}
         >
             <video autoPlay loop muted playsInline className="video-bg" onError={(e) => console.error("Video failed to load", e)}>
-                <source src="vedio_bg.MP4" type="video/mp4" />
+                <source src="/vedio_bg.MP4" type="video/mp4" />
 
                 Your browser does not support the video tag.
             </video>
@@ -68,7 +68,7 @@ const Side_Left = ({ toggleSidebar, sidebarOpen }) => {
                             ></div>
                         </div>
                     </div>
-                    <div className="contact  text-white py-2 md:px-8  p-5 ">
+                    <div className="contact  text-white py-1 md:px-8  p-5 ">
                         <Contact
                             icon={<Mail color="#00e650" />}
                             title="Email"
